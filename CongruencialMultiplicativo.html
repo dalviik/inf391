@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta CHARSET="UTF-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+	<script src="archivoCMul.js"></script>
+	<title>Números Congruenciales Multiplicativos</title>
+</head>
+
+<body >
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<H1 class="text-primary text-center">Generación de Números Congruenciales Multiplicativos</H1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-offset-3 col-md-6">				
+				<div class="form-group panel panel-default panel-body">
+					<div class="col-md-offset-2 col-sm-8 alert alert-warning">
+							*Todos los numeros deben ser mayores a 0
+					</div>
+					<div class="form-horizontal">
+
+						<div class="form-group">
+							<label class="text-info col-md-4 control-label">Nro Semilla</label>
+							<div class="col-sm-6">
+								<input class="form-control" type="number" id="semilla"/>
+							</div>						
+						</div>	
+						<div class="form-group">
+							<label class="text-info col-md-4 control-label">Multiplicador</label>
+							<div class="col-sm-6">
+								<input class="form-control" type="number" id="multiplicador" placeholder="A debe ser par" />
+							</div>						
+						</div>
+						
+						<div class="form-group">
+							<label class="text-info col-md-4 control-label">Modulo</label>
+							<div class="col-sm-6">
+								<input class="form-control" type="number" id="modulo" placeholder="Mayor a todos" />
+							</div>						
+						</div>				
+					</br>
+					<button class="btn btn-primary pull-right" id="generar">GENERAR</button>
+				</div>	
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8">
+				<table class="table table-bordered table-striped table-hover" id="tabla">
+					<thead>
+						<tr>
+							<th><h4 class="text-success text-center">ITERACION</h4></th> 
+							<th><h4 class="text-success text-center">SEMILLA X<small>n</small></h4></th> 
+							<th><h4 class="text-success text-center">SEMILLA X<small>n+1</small></h4></th>
+						</tr>
+					</thead>
+					
+				</table>
+			</div>		
+		</div>
+	</div>
+</body>
+</html>
